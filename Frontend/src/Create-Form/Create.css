@@ -1,0 +1,51 @@
+.Create-Container {
+  height: 88vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Create-Container-Form {
+  height: 60%;
+  width: 30%;
+  background-color: rgb(20, 20, 20);
+  border-radius: 15px;
+}
+.Create-Container-Form > form {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.Create-Container-Form > form > input {
+  display: block;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  margin-top: 10%;
+  border-radius: 15px;
+}
+.Create-Container-Form > form > input::placeholder {
+  text-align: center;
+}
+
+.Create-Container-Form > form > textarea::placeholder {
+  text-align: center;
+}
+.Create-Container-Form > form > button {
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Create-Container {
+    height: 90vh;
+  }
+  .Create-Container-Form {
+    width: 90%;
+  }
+}

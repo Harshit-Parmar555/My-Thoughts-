@@ -1,0 +1,24 @@
+.Main-Page-Container {
+  height: 88vh;
+  width: 100vw;
+  background-color: black;
+}
+.Main-Page-Container-Box {
+  height: 100%;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 600px) {
+  .Main-Page-Container {
+    height: 90vh;
+  }
+  .Main-Page-Container-Box {
+    width: 90%;
+    padding-top: 10%;
+  }
+}

@@ -1,0 +1,60 @@
+.Profile-Page-Container {
+  height: 88vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Profile-Page-Container-Box {
+  height: 70%;
+  width: 60%;
+  border-radius: 15px;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Profile-Pic {
+  height: 60%;
+  width: 30%;
+  border-radius: 50%;
+  background-color: white;
+}
+.Profile-User-Info {
+  height: 60%;
+  width: 60%;
+  background-color: rgb(55, 55, 55);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.Profile-User-Info > button {
+  background-color: red;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .Profile-Page-Container{
+    height: 90vh;
+  }
+  .Profile-Page-Container-Box{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .Profile-Pic{
+    height: 28%;
+    width: 35%;
+  }
+  .Profile-User-Info{
+    width: 90%;
+  }
+}

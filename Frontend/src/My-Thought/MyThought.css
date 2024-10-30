@@ -1,0 +1,23 @@
+.Mythought-Container {
+  height: 88vh;
+  width: 100vw;
+  background-color: black;
+}
+.Mythought-Container-Box {
+  height: 100%;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 600px) {
+  .Mythought-Container {
+    height: 90vh;
+  }
+  .Mythought-Container-Box {
+    width: 90%;
+  }
+}
