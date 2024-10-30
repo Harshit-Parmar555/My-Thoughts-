@@ -6,7 +6,7 @@ const Post = (props) => {
   const handledelete = async () => {
     try {
       const response = await axios.delete(
-        `http://localhost:3030/api/v1/post/deletepost/${props.id}`,
+        `/api/v1/post/deletepost/${props.id}`,
         {withCredentials:true}
       );
       toast(response.data.message);
