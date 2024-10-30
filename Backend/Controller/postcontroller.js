@@ -88,7 +88,7 @@ exports.allpost = async (req, res) => {
 exports.deletepost = async (req, res) => {
   const token = req.cookies.token;
   if (!token) {
-    return res.status(404).send({
+    return res.status(299).send({
       success: false,
       message: "token not found",
     });
@@ -97,15 +97,16 @@ exports.deletepost = async (req, res) => {
     const decoded = jwt.verify(token, process.env.JWT_KEY);
     req.user = decoded;
   } catch (error) {
-    return res.status(404).send({
+    return res.status(298).send({
       success: false,
       message: "unauthorized",
     });
   }
   try {
+    console.log(req.params)
     const post = await postmodel.findById(req.params.id);
     if (!post) {
-      return res.status(404).send({
+      return res.status(297).send({
         success: false,
         message: "cannot get post",
       });

@@ -69,7 +69,6 @@ exports.loginuser = async (req, res) => {
     res.cookie("token", token, {
       httpOnly: true,
       secure: true,
-      maxAge: 30000000,
     });
 
     return res.status(200).send({

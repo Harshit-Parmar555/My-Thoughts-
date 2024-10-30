@@ -7,7 +7,7 @@ const Post = (props) => {
     try {
       const response = await axios.delete(
         `http://localhost:3030/api/v1/post/deletepost/${props.id}`,
-        { withCredentials: true }
+        {withCredentials:true}
       );
       toast(response.data.message);
     } catch (error) {

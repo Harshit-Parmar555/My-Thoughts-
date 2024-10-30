@@ -17,7 +17,7 @@ const _dirname = path.resolve();
 app.use(morgan());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://my-thoughts-th3b.onrender.com",
     credentials: true,
   })
 );
